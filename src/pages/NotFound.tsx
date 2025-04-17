@@ -19,15 +19,15 @@ const NotFound = () => {
     <div className="min-h-[80vh] flex items-center justify-center">
       <div className="text-center">
         <h1 className="text-4xl font-bold mb-4 font-serif text-anne-gray-dark">404</h1>
-        <p className="text-xl text-anne-gray-medium mb-6">Page not found</p>
+        <p className="text-xl text-anne-gray-medium mb-6">Página não encontrada</p>
         <p className="max-w-md mx-auto mb-8 text-anne-gray-dark">
-          The page you are looking for might have been removed, had its name changed,
-          or is temporarily unavailable.
+          A página que você está procurando pode ter sido removida, teve seu nome alterado,
+          ou está temporariamente indisponível.
         </p>
         <Button asChild>
           <Link to="/" className="inline-flex items-center">
             <Home className="mr-2 h-4 w-4" />
-            Return Home
+            Voltar para o Início
           </Link>
         </Button>
       </div>

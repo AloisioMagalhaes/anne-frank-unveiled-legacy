@@ -6,111 +6,115 @@ const BiographyPage = () => {
   return (
     <div className="max-w-4xl mx-auto">
       <PageHeader 
-        title="Anne Frank's Biography" 
-        subtitle="The story of an extraordinary young woman whose voice continues to resonate"
+        title="Biografia de Anne Frank" 
+        subtitle="A história de uma jovem extraordinária cuja voz continua a ressoar"
       />
       
       <div className="prose max-w-none">
         <div className="md:flex gap-6 items-start mb-8">
           <img 
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Anne_Frank_passport_photo%2C_May_1942.jpg/800px-Anne_Frank_passport_photo%2C_May_1942.jpg" 
-            alt="Anne Frank passport photo, 1942"
+            alt="Foto de passaporte de Anne Frank, 1942"
             className="rounded-md shadow-md mb-4 md:mb-0 md:w-1/3 md:max-w-[240px]"
           />
           
           <div>
-            <h2 className="text-2xl font-serif font-semibold mb-4">Early Life (1929-1942)</h2>
+            <h2 className="text-2xl font-serif font-semibold mb-4">Primeiros Anos (1929-1942)</h2>
             <p>
-              Annelies Marie Frank was born on June 12, 1929, in Frankfurt, Germany, to Otto and 
-              Edith Frank. She had an older sister, Margot, born in 1926. The Franks were liberal 
-              Jews who lived in an assimilated community of Jewish and non-Jewish citizens.
+              Annelies Marie Frank nasceu em 12 de junho de 1929, em Frankfurt, Alemanha, filha de Otto e 
+              Edith Frank. Ela tinha uma irmã mais velha, Margot, nascida em 1926. Os Franks eram judeus 
+              liberais que viviam em uma comunidade assimilada de cidadãos judeus e não-judeus.
             </p>
             <p>
-              After the Nazi party gained power in Germany in 1933, Otto Frank moved his family to 
-              Amsterdam, Netherlands, where he established a business. Anne adjusted well to life 
-              in the Netherlands, making friends and attending a Montessori school, where she 
-              showed an early interest in reading and writing.
+              Após o partido nazista ganhar poder na Alemanha em 1933, Otto Frank mudou sua família para 
+              Amsterdã, Holanda, onde estabeleceu um negócio. Anne adaptou-se bem à vida nos Países Baixos, 
+              fazendo amigos e frequentando uma escola Montessori, onde demonstrou um interesse precoce 
+              pela leitura e pela escrita.
             </p>
           </div>
         </div>
         
-        <h2 className="text-2xl font-serif font-semibold mb-4">Life Under Nazi Occupation (1940-1942)</h2>
+        <h2 className="text-2xl font-serif font-semibold mb-4">Vida Sob Ocupação Nazista (1940-1942)</h2>
         <p>
-          The relative peace of Anne's life was shattered in May 1940 when Nazi Germany invaded 
-          the Netherlands. The Nazi occupation brought increasing restrictions for Jewish people, 
-          including being required to wear yellow stars, attend segregated schools, and adhere to 
-          curfews. As conditions worsened, and after Margot received a call-up notice for a Nazi 
-          work camp in 1942, the Frank family went into hiding.
+          A relativa paz da vida de Anne foi destruída em maio de 1940 quando a Alemanha nazista invadiu 
+          os Países Baixos. A ocupação nazista trouxe restrições crescentes para os judeus, 
+          incluindo a obrigação de usar estrelas amarelas, frequentar escolas segregadas e aderir a 
+          toques de recolher. À medida que as condições pioravam, e após Margot receber uma notificação 
+          para um campo de trabalho nazista em 1942, a família Frank entrou em esconderijo.
         </p>
         
         <QuoteBlock 
-          text="I hope I will be able to confide everything to you, as I have never been able to confide in anyone, and I hope you will be a great source of comfort and support."
-          source="Anne Frank to 'Kitty' (her diary), June 12, 1942"
+          text="Espero poder confiar tudo a você, como nunca pude confiar em ninguém, e espero que você seja uma grande fonte de conforto e apoio."
+          source="Anne Frank para 'Kitty' (seu diário), 12 de junho de 1942"
         />
         
-        <h2 className="text-2xl font-serif font-semibold mb-4">Life in Hiding (1942-1944)</h2>
+        <h2 className="text-2xl font-serif font-semibold mb-4">Vida no Esconderijo (1942-1944)</h2>
         <p>
-          On July 6, 1942, the Frank family moved into a secret annex of rooms above Otto Frank's 
-          office at 263 Prinsengracht in Amsterdam. They were joined by four other Jewish people: 
-          Hermann and Auguste van Pels with their son Peter, and Fritz Pfeffer. The annex entrance 
-          was concealed behind a bookcase. Four of Otto's employees – Miep Gies, Johannes Kleiman, 
-          Victor Kugler, and Bep Voskuijl – helped hide them and supplied them with food, supplies, 
-          and news from the outside world at great personal risk.
+          Em 6 de julho de 1942, a família Frank mudou-se para um anexo secreto de quartos acima do 
+          escritório de Otto Frank na Prinsengracht 263, em Amsterdã. Eles foram acompanhados por 
+          outras quatro pessoas judias: Hermann e Auguste van Pels com seu filho Peter, e Fritz Pfeffer. 
+          A entrada para o anexo era escondida atrás de uma estante. O local do esconderijo incluía 
+          vários quartos espalhados pelo segundo e terceiro andares do anexo dos fundos do prédio. 
+          Quatro dos funcionários de Otto – Miep Gies, Johannes Kleiman, Victor Kugler e Bep Voskuijl – 
+          ajudaram a escondê-los e os abasteceram com comida, suprimentos e notícias do mundo exterior, 
+          com grande risco pessoal.
         </p>
         <p>
-          During their time in hiding, Anne kept a diary that she had received as a gift on her 13th 
-          birthday, just weeks before going into hiding. In it, she documented daily life in the 
-          Secret Annex, recorded the tensions and fears of living in confinement, and explored her 
-          own thoughts and feelings as she matured.
+          Durante seu tempo no esconderijo, Anne manteve um diário que havia recebido de presente em seu 
+          13º aniversário, apenas semanas antes de entrar em esconderijo. Nele, ela documentou a vida cotidiana 
+          no Anexo Secreto, registrou as tensões e medos de viver em confinamento e explorou seus próprios 
+          pensamentos e sentimentos à medida que amadurecia.
         </p>
         
         <div className="my-8 grid grid-cols-1 md:grid-cols-2 gap-4">
           <img 
             src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Anne_Frank_Diary_at_Anne_Frank_Museum_in_Berlin-pages-92-93.jpg" 
-            alt="Pages from Anne Frank's diary"
+            alt="Páginas do diário de Anne Frank"
             className="rounded-md shadow-md h-auto mx-auto"
           />
           <img 
             src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Anne_Frank_House_Amsterdam_Nederland.jpg" 
-            alt="The Anne Frank House in Amsterdam"
+            alt="A Casa de Anne Frank em Amsterdã"
             className="rounded-md shadow-md h-auto mx-auto"
           />
         </div>
         
-        <h2 className="text-2xl font-serif font-semibold mb-4">Discovery and Deportation (1944-1945)</h2>
+        <h2 className="text-2xl font-serif font-semibold mb-4">Descoberta e Deportação (1944-1945)</h2>
         <p>
-          On August 4, 1944, the Secret Annex was discovered. The eight people in hiding, along with 
-          two of their helpers (Johannes Kleiman and Victor Kugler), were arrested. They were taken 
-          to the Gestapo headquarters in Amsterdam for interrogation and then transferred to the 
-          Westerbork transit camp.
+          Em 4 de agosto de 1944, o Anexo Secreto foi descoberto. As oito pessoas escondidas, junto com 
+          dois de seus ajudantes (Johannes Kleiman e Victor Kugler), foram presas. Eles foram levados para 
+          a sede da Gestapo em Amsterdã para interrogatório e depois transferidos para o campo de 
+          trânsito de Westerbork.
         </p>
         <p>
-          From Westerbork, Anne and the other residents of the annex were deported to the 
-          Auschwitz-Birkenau concentration camp. Later, Anne and Margot were transferred to the 
-          Bergen-Belsen concentration camp in Germany, where they both died of typhus in March 1945, 
-          just weeks before the camp was liberated by British troops on April 15, 1945.
+          De Westerbork, Anne e os outros residentes do anexo foram deportados para o campo de concentração 
+          de Auschwitz-Birkenau. Mais tarde, Anne e Margot foram transferidas para o campo de concentração 
+          de Bergen-Belsen, na Alemanha, onde ambas morreram de tifo em março de 1945, apenas semanas antes 
+          do campo ser libertado pelas tropas britânicas em 15 de abril de 1945.
         </p>
         
-        <h2 className="text-2xl font-serif font-semibold mb-4">Legacy</h2>
+        <h2 className="text-2xl font-serif font-semibold mb-4">Legado</h2>
         <p>
-          Of the eight people who hid in the Secret Annex, only Otto Frank survived the Holocaust. 
-          After the war, Miep Gies gave Otto the diary that Anne had kept during their time in hiding.
+          Das oito pessoas que se esconderam no Anexo Secreto, apenas Otto Frank sobreviveu ao Holocausto. 
+          Após a guerra, Miep Gies entregou a Otto o diário que Anne havia mantido durante o tempo em que 
+          estiveram escondidos.
         </p>
         <p>
-          Recognizing the significance of his daughter's words, Otto Frank worked to get the diary 
-          published. "Het Achterhuis" (The Secret Annex) was first published in Dutch in 1947. It 
-          has since been translated into more than 70 languages and has become one of the most widely 
-          read books in the world.
+          Reconhecendo a importância das palavras de sua filha, Otto Frank trabalhou para que o diário 
+          fosse publicado. "Het Achterhuis" (O Anexo Secreto) foi publicado pela primeira vez em holandês 
+          em 1947. Desde então, foi traduzido para mais de 70 idiomas e tornou-se um dos livros mais 
+          lidos no mundo.
         </p>
         <p>
-          Anne Frank's diary provides a deeply personal account of the Holocaust and puts a human 
-          face on one of history's greatest tragedies. Her words continue to inspire readers with 
-          their honesty, insight, and unshakeable hope in humanity despite witnessing its worst aspects.
+          O diário de Anne Frank fornece um relato profundamente pessoal do Holocausto e dá um rosto 
+          humano a uma das maiores tragédias da história. Suas palavras continuam a inspirar os leitores 
+          com sua honestidade, perspicácia e esperança inabalável na humanidade, apesar de testemunhar 
+          seus piores aspectos.
         </p>
         
         <QuoteBlock 
-          text="I keep my ideals, because in spite of everything I still believe that people are really good at heart."
-          source="Anne Frank, July 15, 1944"
+          text="Mantenho meus ideais, porque apesar de tudo ainda acredito que as pessoas são realmente boas de coração."
+          source="Anne Frank, 15 de julho de 1944"
         />
       </div>
     </div>

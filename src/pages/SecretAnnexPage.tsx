@@ -7,31 +7,31 @@ const SecretAnnexPage = () => {
   return (
     <div className="max-w-4xl mx-auto">
       <PageHeader 
-        title="The Secret Annex" 
-        subtitle="Explore the hidden space where Anne Frank and seven others lived in hiding from 1942-1944"
+        title="O Anexo Secreto" 
+        subtitle="Explore o espaço oculto onde Anne Frank e outras sete pessoas viveram escondidas de 1942-1944"
       />
       
       <div className="bg-white p-6 rounded-lg shadow-md border border-anne-gray-light/30 mb-8">
-        <h2 className="font-serif text-xl font-semibold mb-4">About the Secret Annex</h2>
+        <h2 className="font-serif text-xl font-semibold mb-4">Sobre o Anexo Secreto</h2>
         <div className="md:flex gap-6">
           <div className="md:w-2/3">
             <p className="text-anne-gray-dark mb-4">
-              The Secret Annex (Dutch: <em>Het Achterhuis</em>) was a hidden apartment within a larger 
-              building at Prinsengracht 263 in Amsterdam. This space, where Anne Frank and seven others 
-              hid during World War II, consisted of several small rooms accessed through a doorway 
-              hidden behind a bookcase.
+              O Anexo Secreto (em holandês: <em>Het Achterhuis</em>) era um apartamento escondido dentro de um 
+              edifício maior na Prinsengracht 263 em Amsterdã. Este espaço, onde Anne Frank e outras sete pessoas 
+              se esconderam durante a Segunda Guerra Mundial, consistia em vários pequenos quartos acessados 
+              através de uma entrada escondida atrás de uma estante.
             </p>
             <p className="text-anne-gray-dark">
-              Otto Frank, Anne's father, had been preparing the hiding place since 1941. The entrance 
-              to the Secret Annex was on the second floor of the building, behind a movable bookcase. 
-              The hiding place included several rooms spread over the second and third floors of the 
-              rear annex of the building.
+              Otto Frank, pai de Anne, vinha preparando o esconderijo desde 1941. A entrada 
+              para o Anexo Secreto ficava no segundo andar do prédio, atrás de uma estante móvel. 
+              O esconderijo incluía vários quartos espalhados pelo segundo e terceiro andares do 
+              anexo dos fundos do prédio.
             </p>
           </div>
           <div className="md:w-1/3 flex justify-center items-start mt-4 md:mt-0">
             <img 
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Anne_Frank_House_Amsterdam_20.JPG/440px-Anne_Frank_House_Amsterdam_20.JPG" 
-              alt="The Movable Bookcase leading to the Secret Annex"
+              alt="A Estante Móvel que levava ao Anexo Secreto"
               className="rounded-lg shadow-md max-h-48"
             />
           </div>
@@ -40,9 +40,9 @@ const SecretAnnexPage = () => {
       
       <Tabs defaultValue="residents">
         <TabsList className="grid w-full grid-cols-3 mb-8">
-          <TabsTrigger value="residents" className="font-serif">Residents</TabsTrigger>
-          <TabsTrigger value="layout" className="font-serif">Layout</TabsTrigger>
-          <TabsTrigger value="helpers" className="font-serif">Helpers</TabsTrigger>
+          <TabsTrigger value="residents" className="font-serif">Residentes</TabsTrigger>
+          <TabsTrigger value="layout" className="font-serif">Estrutura</TabsTrigger>
+          <TabsTrigger value="helpers" className="font-serif">Ajudantes</TabsTrigger>
         </TabsList>
         
         <TabsContent value="residents" className="animate-fade-in">
@@ -50,7 +50,7 @@ const SecretAnnexPage = () => {
             <div className="bg-white p-4 rounded-lg shadow-sm border border-anne-gray-light/20">
               <h3 className="font-serif text-lg font-medium mb-3 flex items-center">
                 <ChevronRight className="h-5 w-5 text-anne-sepia mr-1" />
-                The Frank Family
+                A Família Frank
               </h3>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
@@ -61,16 +61,16 @@ const SecretAnnexPage = () => {
                   />
                   <div>
                     <h4 className="font-medium">Otto Frank</h4>
-                    <p className="text-sm text-anne-gray-dark">Father (1889-1980)</p>
+                    <p className="text-sm text-anne-gray-dark">Pai (1889-1980)</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
                   <div className="w-16 h-16 bg-anne-gray-light/30 rounded-full flex items-center justify-center text-anne-gray-medium">
-                    Photo<br/>N/A
+                    Foto<br/>N/D
                   </div>
                   <div>
                     <h4 className="font-medium">Edith Frank-Holländer</h4>
-                    <p className="text-sm text-anne-gray-dark">Mother (1900-1945)</p>
+                    <p className="text-sm text-anne-gray-dark">Mãe (1900-1945)</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
@@ -81,16 +81,16 @@ const SecretAnnexPage = () => {
                   />
                   <div>
                     <h4 className="font-medium">Anne Frank</h4>
-                    <p className="text-sm text-anne-gray-dark">Daughter (1929-1945)</p>
+                    <p className="text-sm text-anne-gray-dark">Filha (1929-1945)</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
                   <div className="w-16 h-16 bg-anne-gray-light/30 rounded-full flex items-center justify-center text-anne-gray-medium">
-                    Photo<br/>N/A
+                    Foto<br/>N/D
                   </div>
                   <div>
                     <h4 className="font-medium">Margot Frank</h4>
-                    <p className="text-sm text-anne-gray-dark">Daughter (1926-1945)</p>
+                    <p className="text-sm text-anne-gray-dark">Filha (1926-1945)</p>
                   </div>
                 </li>
               </ul>
@@ -99,12 +99,12 @@ const SecretAnnexPage = () => {
             <div className="bg-white p-4 rounded-lg shadow-sm border border-anne-gray-light/20">
               <h3 className="font-serif text-lg font-medium mb-3 flex items-center">
                 <ChevronRight className="h-5 w-5 text-anne-sepia mr-1" />
-                Other Residents
+                Outros Residentes
               </h3>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
                   <div className="w-16 h-16 bg-anne-gray-light/30 rounded-full flex items-center justify-center text-anne-gray-medium">
-                    Photo<br/>N/A
+                    Foto<br/>N/D
                   </div>
                   <div>
                     <h4 className="font-medium">Hermann van Pels</h4>
@@ -113,7 +113,7 @@ const SecretAnnexPage = () => {
                 </li>
                 <li className="flex items-start gap-3">
                   <div className="w-16 h-16 bg-anne-gray-light/30 rounded-full flex items-center justify-center text-anne-gray-medium">
-                    Photo<br/>N/A
+                    Foto<br/>N/D
                   </div>
                   <div>
                     <h4 className="font-medium">Auguste van Pels</h4>
@@ -122,7 +122,7 @@ const SecretAnnexPage = () => {
                 </li>
                 <li className="flex items-start gap-3">
                   <div className="w-16 h-16 bg-anne-gray-light/30 rounded-full flex items-center justify-center text-anne-gray-medium">
-                    Photo<br/>N/A
+                    Foto<br/>N/D
                   </div>
                   <div>
                     <h4 className="font-medium">Peter van Pels</h4>
@@ -131,7 +131,7 @@ const SecretAnnexPage = () => {
                 </li>
                 <li className="flex items-start gap-3">
                   <div className="w-16 h-16 bg-anne-gray-light/30 rounded-full flex items-center justify-center text-anne-gray-medium">
-                    Photo<br/>N/A
+                    Foto<br/>N/D
                   </div>
                   <div>
                     <h4 className="font-medium">Fritz Pfeffer</h4>
@@ -146,9 +146,9 @@ const SecretAnnexPage = () => {
             <div className="flex items-start gap-2">
               <Info className="h-5 w-5 text-anne-blue flex-shrink-0 mt-1" />
               <p className="text-sm text-anne-gray-dark">
-                The eight people in hiding lived in the Secret Annex for more than two years, from July 6, 1942, 
-                until their arrest on August 4, 1944. They had to remain quiet during daytime hours when workers 
-                were in the building, could never go outside, and lived in constant fear of discovery.
+                As oito pessoas escondidas viveram no Anexo Secreto por mais de dois anos, de 6 de julho de 1942 
+                até sua prisão em 4 de agosto de 1944. Eles tinham que permanecer quietos durante as horas do dia 
+                quando os trabalhadores estavam no prédio, nunca podiam sair e viviam em constante medo de serem descobertos.
               </p>
             </div>
           </div>
@@ -157,98 +157,98 @@ const SecretAnnexPage = () => {
         <TabsContent value="layout" className="animate-fade-in">
           <div className="space-y-6">
             <div className="bg-white p-6 rounded-lg shadow-md border border-anne-gray-light/30">
-              <h3 className="font-serif text-xl font-semibold mb-4">Layout of the Secret Annex</h3>
+              <h3 className="font-serif text-xl font-semibold mb-4">Estrutura do Anexo Secreto</h3>
               <div className="md:flex gap-6">
                 <div className="md:w-1/2 mb-4 md:mb-0">
                   <img 
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Anne_Frank_House_floor_plan.svg/600px-Anne_Frank_House_floor_plan.svg.png" 
-                    alt="Floor plan of the Secret Annex"
+                    alt="Planta do Anexo Secreto"
                     className="rounded-lg shadow-sm w-full h-auto"
                   />
                 </div>
                 <div className="md:w-1/2">
-                  <h4 className="font-medium mb-2">Rooms in the Secret Annex:</h4>
+                  <h4 className="font-medium mb-2">Cômodos no Anexo Secreto:</h4>
                   <ul className="space-y-2 mb-4">
                     <li className="flex gap-2">
                       <MapPin className="h-4 w-4 text-anne-sepia flex-shrink-0 mt-1" />
-                      <span>Small office-type room - used by Anne and Fritz Pfeffer</span>
+                      <span>Pequena sala tipo escritório - usada por Anne e Fritz Pfeffer</span>
                     </li>
                     <li className="flex gap-2">
                       <MapPin className="h-4 w-4 text-anne-sepia flex-shrink-0 mt-1" />
-                      <span>Bedroom shared by Otto, Edith, and Margot Frank</span>
+                      <span>Quarto compartilhado por Otto, Edith e Margot Frank</span>
                     </li>
                     <li className="flex gap-2">
                       <MapPin className="h-4 w-4 text-anne-sepia flex-shrink-0 mt-1" />
-                      <span>Common living/dining area</span>
+                      <span>Área comum de estar/jantar</span>
                     </li>
                     <li className="flex gap-2">
                       <MapPin className="h-4 w-4 text-anne-sepia flex-shrink-0 mt-1" />
-                      <span>Bedroom of Hermann and Auguste van Pels</span>
+                      <span>Quarto de Hermann e Auguste van Pels</span>
                     </li>
                     <li className="flex gap-2">
                       <MapPin className="h-4 w-4 text-anne-sepia flex-shrink-0 mt-1" />
-                      <span>Small room used by Peter van Pels</span>
+                      <span>Pequeno quarto usado por Peter van Pels</span>
                     </li>
                     <li className="flex gap-2">
                       <MapPin className="h-4 w-4 text-anne-sepia flex-shrink-0 mt-1" />
-                      <span>Attic - used for storage and occasionally as a retreat</span>
+                      <span>Sótão - usado para armazenamento e ocasionalmente como refúgio</span>
                     </li>
                   </ul>
                   
                   <p className="text-sm text-anne-gray-dark">
-                    Access to the hiding place was through a movable bookcase that concealed the entrance. 
-                    The total area of the Secret Annex was approximately 500 square feet, making for 
-                    extremely cramped quarters for eight people.
+                    O acesso ao esconderijo era através de uma estante móvel que ocultava a entrada. 
+                    A área total do Anexo Secreto era de aproximadamente 46 metros quadrados, tornando-o 
+                    extremamente apertado para oito pessoas.
                   </p>
                 </div>
               </div>
             </div>
             
             <div className="bg-anne-paper p-4 rounded-lg border border-anne-sepia/20">
-              <h4 className="font-serif text-lg font-medium mb-2 text-anne-sepia">From Anne's Diary:</h4>
+              <h4 className="font-serif text-lg font-medium mb-2 text-anne-sepia">Do Diário de Anne:</h4>
               <p className="italic text-anne-gray-dark font-handwritten text-lg">
-                "Now I'll give you a brief description of this 'Secret Annex'... Upstairs there's a small hallway with 
-                a little room to the side, and a large and very dark bathroom. Through the hallway there's a room 
-                containing a stove, a sink, and a WC. Then there's the large and light kitchen, which our helpers 
-                use as an office and living room, and beside it is our living room; Peter's room is right beside us."
+                "Agora vou dar uma breve descrição deste 'Anexo Secreto'... No andar de cima há um pequeno corredor com um 
+                quartinho ao lado, e um banheiro muito grande e escuro. Pelo corredor há um cômodo 
+                contendo um fogão, uma pia e um banheiro. Então há a grande e iluminada cozinha, que nossos ajudantes 
+                usam como escritório e sala de estar, e ao lado dela está nossa sala de estar; o quarto de Peter fica bem ao nosso lado."
               </p>
-              <p className="text-right text-anne-gray-medium text-sm mt-2">— July 9, 1942</p>
+              <p className="text-right text-anne-gray-medium text-sm mt-2">— 9 de julho de 1942</p>
             </div>
             
             <div className="grid md:grid-cols-3 gap-4">
               <div className="bg-white rounded-lg overflow-hidden shadow-md">
                 <img 
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Anne_Frank_House_Amsterdam_interior.JPG/440px-Anne_Frank_House_Amsterdam_interior.JPG" 
-                  alt="Anne's Room"
+                  alt="Quarto de Anne"
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-3">
-                  <h4 className="font-medium text-sm">Anne's Room</h4>
-                  <p className="text-xs text-anne-gray-dark">Shared with Fritz Pfeffer</p>
+                  <h4 className="font-medium text-sm">Quarto de Anne</h4>
+                  <p className="text-xs text-anne-gray-dark">Compartilhado com Fritz Pfeffer</p>
                 </div>
               </div>
               
               <div className="bg-white rounded-lg overflow-hidden shadow-md">
                 <img 
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Anne_Frank_House_Amsterdam_4.JPG/440px-Anne_Frank_House_Amsterdam_4.JPG" 
-                  alt="Common Area"
+                  alt="Área Comum"
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-3">
-                  <h4 className="font-medium text-sm">Common Area</h4>
-                  <p className="text-xs text-anne-gray-dark">Living and dining space</p>
+                  <h4 className="font-medium text-sm">Área Comum</h4>
+                  <p className="text-xs text-anne-gray-dark">Espaço de estar e refeições</p>
                 </div>
               </div>
               
               <div className="bg-white rounded-lg overflow-hidden shadow-md">
                 <img 
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Anne_Frank_House_Amsterdam_25.JPG/440px-Anne_Frank_House_Amsterdam_25.JPG" 
-                  alt="Attic"
+                  alt="Sótão"
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-3">
-                  <h4 className="font-medium text-sm">Attic Space</h4>
-                  <p className="text-xs text-anne-gray-dark">Where Anne and Peter spent time</p>
+                  <h4 className="font-medium text-sm">Espaço do Sótão</h4>
+                  <p className="text-xs text-anne-gray-dark">Onde Anne e Peter passavam tempo</p>
                 </div>
               </div>
             </div>
@@ -258,11 +258,11 @@ const SecretAnnexPage = () => {
         <TabsContent value="helpers" className="animate-fade-in">
           <div className="space-y-6">
             <div className="bg-white p-6 rounded-lg shadow-md border border-anne-gray-light/30">
-              <h3 className="font-serif text-xl font-semibold mb-4">The Helpers</h3>
+              <h3 className="font-serif text-xl font-semibold mb-4">Os Ajudantes</h3>
               <p className="text-anne-gray-dark mb-4">
-                The eight people in the Secret Annex could not have survived for over two years without the help 
-                of several trusted employees of Otto Frank's business. These helpers risked their lives to supply 
-                food, news, and other necessities to the hidden residents.
+                As oito pessoas no Anexo Secreto não poderiam ter sobrevivido por mais de dois anos sem a ajuda 
+                de vários funcionários de confiança do negócio de Otto Frank. Esses ajudantes arriscaram suas vidas para 
+                fornecer comida, notícias e outras necessidades aos residentes escondidos.
               </p>
               
               <div className="grid md:grid-cols-2 gap-6 mt-6">
@@ -275,50 +275,50 @@ const SecretAnnexPage = () => {
                   <div>
                     <h4 className="font-medium">Miep Gies (1909-2010)</h4>
                     <p className="text-sm text-anne-gray-dark mb-2">
-                      Otto Frank's secretary who helped arrange the hiding place. She brought food, books, 
-                      and news to the Secret Annex. After the arrest, she found and saved Anne's diary.
+                      Secretária de Otto Frank que ajudou a organizar o esconderijo. Ela trazia comida, livros 
+                      e notícias para o Anexo Secreto. Após a prisão, ela encontrou e salvou o diário de Anne.
                     </p>
                     <p className="text-xs text-anne-sepia italic">
-                      "I am not a hero. I just did what any decent person would have done."
+                      "Eu não sou uma heroína. Apenas fiz o que qualquer pessoa decente teria feito."
                     </p>
                   </div>
                 </div>
                 
                 <div className="flex items-start gap-4">
                   <div className="w-20 h-20 bg-anne-gray-light/30 rounded-full flex items-center justify-center text-anne-gray-medium">
-                    Photo<br/>N/A
+                    Foto<br/>N/D
                   </div>
                   <div>
                     <h4 className="font-medium">Johannes Kleiman (1896-1959)</h4>
                     <p className="text-sm text-anne-gray-dark">
-                      Business associate of Otto Frank who helped arrange the hiding place and provided support. 
-                      He was arrested along with the hidden residents but survived the war.
+                      Sócio comercial de Otto Frank que ajudou a organizar o esconderijo e forneceu apoio. 
+                      Ele foi preso junto com os residentes escondidos, mas sobreviveu à guerra.
                     </p>
                   </div>
                 </div>
                 
                 <div className="flex items-start gap-4">
                   <div className="w-20 h-20 bg-anne-gray-light/30 rounded-full flex items-center justify-center text-anne-gray-medium">
-                    Photo<br/>N/A
+                    Foto<br/>N/D
                   </div>
                   <div>
                     <h4 className="font-medium">Victor Kugler (1900-1981)</h4>
                     <p className="text-sm text-anne-gray-dark">
-                      Business associate who took over management of the company and helped supply the hiding place. 
-                      He was arrested with the residents but survived imprisonment.
+                      Sócio comercial que assumiu a gestão da empresa e ajudou a abastecer o esconderijo. 
+                      Ele foi preso com os residentes, mas sobreviveu ao aprisionamento.
                     </p>
                   </div>
                 </div>
                 
                 <div className="flex items-start gap-4">
                   <div className="w-20 h-20 bg-anne-gray-light/30 rounded-full flex items-center justify-center text-anne-gray-medium">
-                    Photo<br/>N/A
+                    Foto<br/>N/D
                   </div>
                   <div>
                     <h4 className="font-medium">Bep Voskuijl (1919-1983)</h4>
                     <p className="text-sm text-anne-gray-dark">
-                      A young secretary in the company who helped supply food and other necessities to the 
-                      Secret Annex. She kept their secret throughout the war.
+                      Uma jovem secretária da empresa que ajudou a fornecer comida e outras necessidades para o 
+                      Anexo Secreto. Ela manteve o segredo deles durante toda a guerra.
                     </p>
                   </div>
                 </div>
@@ -326,25 +326,25 @@ const SecretAnnexPage = () => {
             </div>
             
             <div className="diary-entry">
-              <h4 className="font-medium mb-2">From Anne's Diary:</h4>
+              <h4 className="font-medium mb-2">Do Diário de Anne:</h4>
               <p className="text-lg mb-4">
-                "Never have we heard one word of the burden we must be, never has one of them complained of all the trouble 
-                we give. They come upstairs every day, talk about business and politics, food and newspaper articles as if 
-                we weren't there. They put on their most cheerful expressions, bring flowers and gifts for birthdays and 
-                bank holidays, are always ready to do what they can. That's something we should never forget; although 
-                others may show heroism in the war or against the Germans, our helpers display heroism in their cheerfulness 
-                and affection."
+                "Nunca ouvimos uma palavra sequer sobre o fardo que devemos ser, nunca nenhum deles reclamou de todos os problemas 
+                que causamos. Eles sobem as escadas todos os dias, falam sobre negócios e política, comida e artigos de jornal como se 
+                não estivéssemos lá. Eles mostram suas expressões mais alegres, trazem flores e presentes para aniversários e 
+                feriados bancários, estão sempre prontos para fazer o que podem. Isso é algo que nunca devemos esquecer; embora 
+                outros possam mostrar heroísmo na guerra ou contra os alemães, nossos ajudantes mostram heroísmo em sua alegria 
+                e afeição."
               </p>
-              <p className="text-right text-anne-gray-medium">— January 28, 1944</p>
+              <p className="text-right text-anne-gray-medium">— 28 de janeiro de 1944</p>
             </div>
             
             <div className="p-4 bg-anne-gray-light/20 rounded-lg">
               <div className="flex items-start gap-2">
                 <Info className="h-5 w-5 text-anne-blue flex-shrink-0 mt-1" />
                 <p className="text-sm text-anne-gray-dark">
-                  After the war, Otto Frank expressed his deep gratitude to these helpers. Without their courage 
-                  and compassion, the residents of the Secret Annex would not have survived as long as they did, 
-                  and Anne's diary might never have been preserved for the world.
+                  Após a guerra, Otto Frank expressou sua profunda gratidão a esses ajudantes. Sem sua coragem 
+                  e compaixão, os residentes do Anexo Secreto não teriam sobrevivido tanto tempo, 
+                  e o diário de Anne talvez nunca tivesse sido preservado para o mundo.
                 </p>
               </div>
             </div>
@@ -353,16 +353,16 @@ const SecretAnnexPage = () => {
       </Tabs>
       
       <div className="mt-12 bg-anne-blue/5 p-6 rounded-lg border border-anne-blue/20 text-center">
-        <h3 className="font-serif text-xl font-medium mb-4">Virtual Tour Coming Soon</h3>
+        <h3 className="font-serif text-xl font-medium mb-4">Tour Virtual Em Breve</h3>
         <p className="text-anne-gray-dark mb-6">
-          We're developing an interactive 3D tour of the Secret Annex that will allow you to explore the 
-          space where Anne Frank and seven others lived in hiding. The tour will feature hotspots revealing 
-          diary entries related to specific locations.
+          Estamos desenvolvendo um tour interativo em 3D do Anexo Secreto que permitirá que você explore o 
+          espaço onde Anne Frank e outras sete pessoas viveram escondidas. O tour apresentará pontos de interesse 
+          revelando trechos do diário relacionados a locais específicos.
         </p>
         <div className="flex justify-center">
           <img 
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Interior_of_Anne_Frank%27s_House_Amsterdam_31.JPG/440px-Interior_of_Anne_Frank%27s_House_Amsterdam_31.JPG" 
-            alt="Interior of the Anne Frank House" 
+            alt="Interior da Casa de Anne Frank" 
             className="rounded-lg shadow-lg max-w-full md:max-w-md"
           />
         </div>

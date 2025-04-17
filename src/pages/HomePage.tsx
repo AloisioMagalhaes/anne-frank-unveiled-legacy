@@ -11,21 +11,21 @@ const HomePage = () => {
       <section className="py-10 md:py-16 text-center">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-anne-ink font-serif mb-6 animate-fade-in">
-            Anne Frank: <span className="text-anne-sepia">Unveiled Legacy</span>
+            Anne Frank: <span className="text-anne-sepia">Legado Revelado</span>
           </h1>
           <p className="text-lg md:text-xl text-anne-gray-dark mb-8 animate-fade-in">
-            Explore the extraordinary life and enduring legacy of Anne Frank during the years 
-            1942-1944, through her writings, historical context, and impact on our world.
+            Explore a extraordinária vida e o legado duradouro de Anne Frank durante os anos 
+            1942-1944, através de seus escritos, contexto histórico e impacto em nosso mundo.
           </p>
           <div className="flex flex-wrap justify-center gap-4 animate-fade-in">
             <Button asChild size="lg" className="bg-anne-sepia hover:bg-anne-sepia/80 text-white">
               <Link to="/timeline">
-                Explore Timeline
+                Explorar Linha do Tempo
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg">
-              <Link to="/biography">Learn About Anne</Link>
+              <Link to="/biography">Conhecer Anne</Link>
             </Button>
           </div>
         </div>
@@ -33,8 +33,8 @@ const HomePage = () => {
       
       {/* Quote Section */}
       <QuoteBlock 
-        text="I want to go on living even after my death! And therefore I am grateful to God for giving me this gift, this possibility of developing myself and of writing, of expressing all that is in me."
-        source="Anne Frank, April 5, 1944"
+        text="Quero continuar vivendo mesmo após a minha morte! E, portanto, sou grata a Deus por me dar este dom, esta possibilidade de me desenvolver e de escrever, de expressar tudo o que está em mim."
+        source="Anne Frank, 5 de abril de 1944"
         className="max-w-2xl mx-auto"
       />
       
@@ -44,12 +44,12 @@ const HomePage = () => {
           <div className="bg-anne-sepia/10 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
             <BookOpen className="h-6 w-6 text-anne-sepia" />
           </div>
-          <h2 className="font-serif text-xl font-semibold mb-3">Diary Excerpts</h2>
+          <h2 className="font-serif text-xl font-semibold mb-3">Trechos do Diário</h2>
           <p className="text-anne-gray-dark mb-4">
-            Experience Anne's thoughts and emotions through selected passages from her diary.
+            Conheça os pensamentos e emoções de Anne através de passagens selecionadas de seu diário.
           </p>
           <Button asChild variant="outline" className="w-full">
-            <Link to="/diary">Read Excerpts</Link>
+            <Link to="/diary">Ler Trechos</Link>
           </Button>
         </div>
         
@@ -57,12 +57,12 @@ const HomePage = () => {
           <div className="bg-anne-blue/10 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
             <Calendar className="h-6 w-6 text-anne-blue" />
           </div>
-          <h2 className="font-serif text-xl font-semibold mb-3">Interactive Timeline</h2>
+          <h2 className="font-serif text-xl font-semibold mb-3">Linha do Tempo Interativa</h2>
           <p className="text-anne-gray-dark mb-4">
-            Follow Anne's journey alongside world events during this pivotal period in history.
+            Acompanhe a jornada de Anne junto aos eventos mundiais durante este período crucial da história.
           </p>
           <Button asChild variant="outline" className="w-full">
-            <Link to="/timeline">View Timeline</Link>
+            <Link to="/timeline">Ver Linha do Tempo</Link>
           </Button>
         </div>
         
@@ -70,35 +70,35 @@ const HomePage = () => {
           <div className="bg-anne-hope/10 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
             <School className="h-6 w-6 text-anne-hope" />
           </div>
-          <h2 className="font-serif text-xl font-semibold mb-3">Educational Resources</h2>
+          <h2 className="font-serif text-xl font-semibold mb-3">Recursos Educacionais</h2>
           <p className="text-anne-gray-dark mb-4">
-            Access teaching materials, activities, and scholarly resources about Anne Frank.
+            Acesse materiais didáticos, atividades e recursos acadêmicos sobre Anne Frank.
           </p>
           <Button asChild variant="outline" className="w-full">
-            <Link to="/resources">Browse Resources</Link>
+            <Link to="/resources">Explorar Recursos</Link>
           </Button>
         </div>
       </section>
       
       {/* About This Project */}
       <section className="bg-white py-8 px-6 rounded-lg shadow-md border border-anne-gray-light/30 max-w-4xl mx-auto">
-        <h2 className="font-serif text-2xl font-semibold mb-4 text-center">About This Project</h2>
+        <h2 className="font-serif text-2xl font-semibold mb-4 text-center">Sobre Este Projeto</h2>
         <div className="prose max-w-none text-anne-gray-dark">
           <p>
-            "Anne Frank: Unveiled Legacy" is an educational initiative dedicated to preserving and sharing 
-            Anne Frank's powerful story during the Holocaust. Our mission is to provide historically 
-            accurate information about Anne Frank's life, particularly during the years 1942-1944 
-            when she and her family were in hiding in the Secret Annex.
+            "Anne Frank: Legado Revelado" é uma iniciativa educacional dedicada a preservar e compartilhar 
+            a poderosa história de Anne Frank durante o Holocausto. Nossa missão é fornecer 
+            informações historicamente precisas sobre a vida de Anne Frank, particularmente durante os anos 
+            1942-1944, quando ela e sua família estavam escondidas no Anexo Secreto.
           </p>
           <p>
-            Through interactive features, primary source materials, and educational resources, 
-            we aim to help visitors understand the historical significance of Anne's diary and 
-            the broader context of the Holocaust. Our content has been carefully vetted by Holocaust 
-            scholars to ensure accuracy and historical integrity.
+            Através de recursos interativos, materiais de fontes primárias e recursos educacionais, 
+            nosso objetivo é ajudar os visitantes a compreender o significado histórico do diário de Anne 
+            e o contexto mais amplo do Holocausto. Nosso conteúdo foi cuidadosamente avaliado por 
+            estudiosos do Holocausto para garantir precisão e integridade histórica.
           </p>
           <p>
-            We invite you to explore Anne's journey, reflect on her words, and consider how her 
-            story continues to resonate with people around the world today.
+            Convidamos você a explorar a jornada de Anne, refletir sobre suas palavras e considerar como 
+            sua história continua a ressoar com pessoas ao redor do mundo hoje.
           </p>
         </div>
       </section>
