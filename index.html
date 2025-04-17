@@ -1,196 +1,205 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anne Frank: Legado Revelado</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Nanum+Pen+Script&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
-</head>
-<body class="page">
-  <!-- Navegação -->
-  <header class="header">
-    <div class="container">
-      <nav class="navigation">
-        <a href="/" class="navigation__logo">Anne Frank</a>
-        <div class="navigation__menu-toggle" id="menuToggle">
-          <span class="navigation__menu-icon"></span>
-        </div>
-        <ul class="navigation__menu" id="menu">
-          <li class="navigation__item">
-            <a href="/" class="navigation__link navigation__link--active">Início</a>
-          </li>
-          <li class="navigation__item">
-            <a href="/biography.html" class="navigation__link">Biografia</a>
-          </li>
-          <li class="navigation__item">
-            <a href="/timeline.html" class="navigation__link">Linha do Tempo</a>
-          </li>
-          <li class="navigation__item">
-            <a href="/diary.html" class="navigation__link">Diário</a>
-          </li>
-          <li class="navigation__item">
-            <a href="/secret-annex.html" class="navigation__link">Anexo Secreto</a>
-          </li>
-          <li class="navigation__item">
-            <a href="/resources.html" class="navigation__link">Recursos</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
-  <!-- Conteúdo Principal -->
-  <main class="main">
-    <div class="container">
-      <!-- Seção Hero -->
-      <section class="hero">
-        <div class="hero__content">
-          <h1 class="hero__title">
-            Anne Frank: <span class="hero__title-highlight">Legado Revelado</span>
-          </h1>
-          <p class="hero__text">
-            Explore a extraordinária vida e o legado duradouro de Anne Frank durante os anos 
-            1942-1944, através de seus escritos, contexto histórico e impacto em nosso mundo.
-          </p>
-          <div class="hero__buttons">
-            <a href="/timeline.html" class="button button--primary">
-              Explorar Linha do Tempo
-              <svg class="button__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </a>
-            <a href="/biography.html" class="button button--outline">Conhecer Anne</a>
-          </div>
-        </div>
-      </section>
-      
-      <!-- Seção de Citação -->
-      <section class="quote">
-        <blockquote class="quote__block">
-          <p class="quote__text">
-            "Quero continuar vivendo mesmo após a minha morte! E, portanto, sou grata a Deus por me dar este dom, esta possibilidade de me desenvolver e de escrever, de expressar tudo o que está em mim."
-          </p>
-          <cite class="quote__source">Anne Frank, 5 de abril de 1944</cite>
-        </blockquote>
-      </section>
-      
-      <!-- Seção de Destaques -->
-      <section class="features">
-        <div class="features__grid">
-          <div class="feature">
-            <div class="feature__icon feature__icon--diary">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 19.5V4.5C4 4.10218 4.15804 3.72064 4.43934 3.43934C4.72064 3.15804 5.10218 3 5.5 3H18.5C18.8978 3 19.2794 3.15804 19.5607 3.43934C19.842 3.72064 20 4.10218 20 4.5V19.5C20 19.8978 19.842 20.2794 19.5607 20.5607C19.2794 20.842 18.8978 21 18.5 21H5.5C5.10218 21 4.72064 20.842 4.43934 20.5607C4.15804 20.2794 4 19.8978 4 19.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M12 11H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M12 8H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M8 9L9 10L8 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M4 19.5V4.5C4 4.10218 4.15804 3.72064 4.43934 3.43934C4.72064 3.15804 5.10218 3 5.5 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </div>
-            <h2 class="feature__title">Trechos do Diário</h2>
-            <p class="feature__text">
-              Conheça os pensamentos e emoções de Anne através de passagens selecionadas de seu diário.
-            </p>
-            <a href="/diary.html" class="button button--outline button--full">Ler Trechos</a>
-          </div>
-          
-          <div class="feature">
-            <div class="feature__icon feature__icon--timeline">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M16 2V6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M8 2V6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M3 10H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </div>
-            <h2 class="feature__title">Linha do Tempo Interativa</h2>
-            <p class="feature__text">
-              Acompanhe a jornada de Anne junto aos eventos mundiais durante este período crucial da história.
-            </p>
-            <a href="/timeline.html" class="button button--outline button--full">Ver Linha do Tempo</a>
-          </div>
-          
-          <div class="feature">
-            <div class="feature__icon feature__icon--resources">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M22 10V6C22 4.89543 21.1046 4 20 4H4C2.89543 4 2 4.89543 2 6V10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M12 12H4C2.89543 12 2 12.8954 2 14V18C2 19.1046 2.89543 20 4 20H20C21.1046 20 22 19.1046 22 18V14C22 12.8954 21.1046 12 20 12H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </div>
-            <h2 class="feature__title">Recursos Educacionais</h2>
-            <p class="feature__text">
-              Acesse materiais didáticos, atividades e recursos acadêmicos sobre Anne Frank.
-            </p>
-            <a href="/resources.html" class="button button--outline button--full">Explorar Recursos</a>
-          </div>
-        </div>
-      </section>
-      
-      <!-- Sobre o Projeto -->
-      <section class="about">
-        <div class="about__container">
-          <h2 class="about__title">Sobre Este Projeto</h2>
-          <div class="about__content">
-            <p class="about__text">
-              "Anne Frank: Legado Revelado" é uma iniciativa educacional dedicada a preservar e compartilhar 
-              a poderosa história de Anne Frank durante o Holocausto. Nossa missão é fornecer 
-              informações historicamente precisas sobre a vida de Anne Frank, particularmente durante os anos 
-              1942-1944, quando ela e sua família estavam escondidas no Anexo Secreto.
-            </p>
-            <p class="about__text">
-              Através de recursos interativos, materiais de fontes primárias e recursos educacionais, 
-              nosso objetivo é ajudar os visitantes a compreender o significado histórico do diário de Anne 
-              e o contexto mais amplo do Holocausto. Nosso conteúdo foi cuidadosamente avaliado por 
-              estudiosos do Holocausto para garantir precisão e integridade histórica.
-            </p>
-            <p class="about__text">
-              Convidamos você a explorar a jornada de Anne, refletir sobre suas palavras e considerar como 
-              sua história continua a ressoar com pessoas ao redor do mundo hoje.
-            </p>
-          </div>
-        </div>
-      </section>
-    </div>
-  </main>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anne Frank: Legado Revelado</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Nanum+Pen+Script&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
+      rel="stylesheet">
+  </head>
 
-  <hr class="separator">
-  
-  <!-- Rodapé -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__content">
-        <div class="footer__section">
-          <h3 class="footer__title">Anne Frank: Legado Revelado</h3>
-          <p class="footer__text">Um projeto educacional dedicado à preservação da memória de Anne Frank.</p>
-        </div>
-        
-        <div class="footer__section">
-          <h3 class="footer__title">Navegação</h3>
-          <ul class="footer__links">
-            <li class="footer__link-item"><a href="/" class="footer__link">Início</a></li>
-            <li class="footer__link-item"><a href="/biography.html" class="footer__link">Biografia</a></li>
-            <li class="footer__link-item"><a href="/timeline.html" class="footer__link">Linha do Tempo</a></li>
-            <li class="footer__link-item"><a href="/diary.html" class="footer__link">Diário</a></li>
-            <li class="footer__link-item"><a href="/secret-annex.html" class="footer__link">Anexo Secreto</a></li>
-            <li class="footer__link-item"><a href="/resources.html" class="footer__link">Recursos</a></li>
+  <body class="page">
+    <!-- Navegação -->
+    <header class="header">
+      <div class="container">
+        <nav class="navigation">
+          <a href="/" class="navigation__logo">Anne Frank</a>
+          <div class="navigation__menu-toggle" id="menuToggle">
+            <span class="navigation__menu-icon"></span>
+          </div>
+          <ul class="navigation__menu" id="menu">
+            <li class="navigation__item">
+              <a href="/" class="navigation__link navigation__link--active">Início</a>
+            </li>
+            <li class="navigation__item">
+              <a href="/biography.html" class="navigation__link">Biografia</a>
+            </li>
+            <li class="navigation__item">
+              <a href="/timeline.html" class="navigation__link">Linha do Tempo</a>
+            </li>
+            <li class="navigation__item">
+              <a href="/diary.html" class="navigation__link">Diário</a>
+            </li>
+            <li class="navigation__item">
+              <a href="/secret-annex.html" class="navigation__link">Anexo Secreto</a>
+            </li>
+            <li class="navigation__item">
+              <a href="/resources.html" class="navigation__link">Recursos</a>
+            </li>
           </ul>
-        </div>
-        
-        <div class="footer__section">
-          <h3 class="footer__title">Contato</h3>
-          <p class="footer__text">Para mais informações, entre em contato conosco.</p>
-          <a href="mailto:info@annefrank-legado.org" class="footer__link">info@annefrank-legado.org</a>
-        </div>
+        </nav>
       </div>
-      
-      <div class="footer__bottom">
-        <p class="footer__copyright">© 2024 Anne Frank: Legado Revelado. Todos os direitos reservados.</p>
-      </div>
-    </div>
-  </footer>
+    </header>
 
-  <script src="script.js"></script>
-</body>
+    <!-- Conteúdo Principal -->
+    <main class="main">
+      <div class="container">
+        <!-- Seção Hero -->
+        <section class="hero">
+          <div class="hero__content">
+            <h1 class="hero__title">
+              Anne Frank: <span class="hero__title-highlight">Legado Revelado</span>
+            </h1>
+            <p class="hero__text">
+              Explore a extraordinária vida e o legado duradouro de Anne Frank durante os anos
+              1942-1944, através de seus escritos, contexto histórico e impacto em nosso mundo.
+            </p>
+            <div class="hero__buttons">
+              <a href="/timeline.html" class="button button--primary">
+                Explorar Linha do Tempo
+                <svg class="button__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+              <a href="/biography.html" class="button button--outline">Conhecer Anne</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Seção de Citação -->
+        <section class="quote">
+          <blockquote class="quote__block">
+            <p class="quote__text">
+              "Quero continuar vivendo mesmo após a minha morte! E, portanto, sou grata a Deus por me dar este dom, esta
+              possibilidade de me desenvolver e de escrever, de expressar tudo o que está em mim."
+            </p>
+            <cite class="quote__source">Anne Frank, 5 de abril de 1944</cite>
+          </blockquote>
+        </section>
+
+        <!-- Seção de Destaques -->
+        <section class="features">
+          <div class="features__grid">
+            <div class="feature">
+              <div class="feature__icon feature__icon--diary">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4 19.5v-15A1.5 1.5 0 0 1 5.5 3h13A1.5 1.5 0 0 1 20 4.5v15a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 19.5m8-8.5h4m-4-3h4"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="m8 9 1 1-1 1m-4 8.5v-15A1.5 1.5 0 0 1 5.5 3" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <h2 class="feature__title">Trechos do Diário</h2>
+              <p class="feature__text">
+                Conheça os pensamentos e emoções de Anne através de passagens selecionadas de seu diário.
+              </p>
+              <a href="/diary.html" class="button button--outline button--full">Ler Trechos</a>
+            </div>
+
+            <div class="feature">
+              <div class="feature__icon feature__icon--timeline">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M16 2v4M8 2v4m-5 4h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+              <h2 class="feature__title">Linha do Tempo Interativa</h2>
+              <p class="feature__text">
+                Acompanhe a jornada de Anne junto aos eventos mundiais durante este período crucial da história.
+              </p>
+              <a href="/timeline.html" class="button button--outline button--full">Ver Linha do Tempo</a>
+            </div>
+
+            <div class="feature">
+              <div class="feature__icon feature__icon--resources">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M22 10V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v4m10 2H4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2h-4"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <h2 class="feature__title">Recursos Educacionais</h2>
+              <p class="feature__text">
+                Acesse materiais didáticos, atividades e recursos acadêmicos sobre Anne Frank.
+              </p>
+              <a href="/resources.html" class="button button--outline button--full">Explorar Recursos</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Sobre o Projeto -->
+        <section class="about">
+          <div class="about__container">
+            <h2 class="about__title">Sobre Este Projeto</h2>
+            <div class="about__content">
+              <p class="about__text">
+                "Anne Frank: Legado Revelado" é uma iniciativa educacional dedicada a preservar e compartilhar
+                a poderosa história de Anne Frank durante o Holocausto. Nossa missão é fornecer
+                informações historicamente precisas sobre a vida de Anne Frank, particularmente durante os anos
+                1942-1944, quando ela e sua família estavam escondidas no Anexo Secreto.
+              </p>
+              <p class="about__text">
+                Através de recursos interativos, materiais de fontes primárias e recursos educacionais,
+                nosso objetivo é ajudar os visitantes a compreender o significado histórico do diário de Anne
+                e o contexto mais amplo do Holocausto. Nosso conteúdo foi cuidadosamente avaliado por
+                estudiosos do Holocausto para garantir precisão e integridade histórica.
+              </p>
+              <p class="about__text">
+                Convidamos você a explorar a jornada de Anne, refletir sobre suas palavras e considerar como
+                sua história continua a ressoar com pessoas ao redor do mundo hoje.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <hr class="separator">
+
+    <!-- Rodapé -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__section">
+            <h3 class="footer__title">Anne Frank: Legado Revelado</h3>
+            <p class="footer__text">Um projeto educacional dedicado à preservação da memória de Anne Frank.</p>
+          </div>
+
+          <div class="footer__section">
+            <h3 class="footer__title">Navegação</h3>
+            <ul class="footer__links">
+              <li class="footer__link-item"><a href="/" class="footer__link">Início</a></li>
+              <li class="footer__link-item"><a href="/biography.html" class="footer__link">Biografia</a></li>
+              <li class="footer__link-item"><a href="/timeline.html" class="footer__link">Linha do Tempo</a></li>
+              <li class="footer__link-item"><a href="/diary.html" class="footer__link">Diário</a></li>
+              <li class="footer__link-item"><a href="/secret-annex.html" class="footer__link">Anexo Secreto</a></li>
+              <li class="footer__link-item"><a href="/resources.html" class="footer__link">Recursos</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__section">
+            <h3 class="footer__title">Contato</h3>
+            <p class="footer__text">Para mais informações, entre em contato conosco.</p>
+            <a href="mailto:info@annefrank-legado.org"
+              class="footer__link">ceti-monsenhor-raimundo-nonato-melo-1b@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p class="footer__copyright">© 2024 Anne Frank: Legado Revelado. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+
 </html>

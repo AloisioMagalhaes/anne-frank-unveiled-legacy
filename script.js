@@ -1,77 +1,102 @@
-
 // Código JavaScript para o site Anne Frank: Legado Revelado
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener( "DOMContentLoaded", () =>
+{
   // Gerenciamento do menu de navegação móvel
-  const menuToggle = document.getElementById('menuToggle');
-  const menu = document.getElementById('menu');
-  
-  if (menuToggle && menu) {
-    menuToggle.addEventListener('click', () => {
-      menuToggle.classList.toggle('navigation__menu-toggle--active');
-      menu.classList.toggle('navigation__menu--active');
-    });
+  const menuToggle = document.getElementById( "menuToggle" );
+  const menu = document.getElementById( "menu" );
+
+  if ( menuToggle && menu )
+  {
+    menuToggle.addEventListener( "click", () =>
+    {
+      menuToggle.classList.toggle( "navigation__menu-toggle--active" );
+      menu.classList.toggle( "navigation__menu--active" );
+    } );
   }
-  
+
   // Destacar link atual de navegação
-  const highlightCurrentPage = () => {
+  const highlightCurrentPage = () =>
+  {
     const currentPath = window.location.pathname;
-    const navLinks = document.querySelectorAll('.navigation__link');
-    
-    navLinks.forEach(link => {
-      const linkPath = new URL(link.href).pathname;
-      
+    const navLinks = document.querySelectorAll( ".navigation__link" );
+
+    navLinks.forEach( ( link ) =>
+    {
+      const linkPath = new URL( link.href ).pathname;
+
       // A página inicial é um caso especial
-      if (currentPath === '/' && linkPath === '/') {
-        link.classList.add('navigation__link--active');
+      if ( currentPath === "/" && linkPath === "/" )
+      {
+        link.classList.add( "navigation__link--active" );
       }
       // Para outras páginas, verifique se o caminho do link está contido no caminho atual
-      else if (currentPath !== '/' && linkPath !== '/' && currentPath.includes(linkPath)) {
-        link.classList.add('navigation__link--active');
-      } else {
-        link.classList.remove('navigation__link--active');
+      else if (
+        currentPath !== "/" &&
+        linkPath !== "/" &&
+        currentPath.includes( linkPath )
+      )
+      {
+        link.classList.add( "navigation__link--active" );
+      } else
+      {
+        link.classList.remove( "navigation__link--active" );
       }
-    });
+    } );
   };
-  
+
   highlightCurrentPage();
-  
+
   // Animações ao rolar a página
-  const animateOnScroll = () => {
-    const elements = document.querySelectorAll('.feature, .quote__block, .about__container');
-    
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.style.opacity = '1';
-          entry.target.style.transform = 'translateY(0)';
-        }
-      });
-    }, { threshold: 0.1 });
-    
-    elements.forEach(element => {
+  const animateOnScroll = () =>
+  {
+    const elements = document.querySelectorAll(
+      ".feature, .quote__block, .about__container"
+    );
+
+    const observer = new IntersectionObserver(
+      ( entries ) =>
+      {
+        entries.forEach( ( entry ) =>
+        {
+          if ( entry.isIntersecting )
+          {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+          }
+        } );
+      },
+      { threshold: 0.1 }
+    );
+
+    elements.forEach( ( element ) =>
+    {
       // Configurar estilo inicial para animação
-      element.style.opacity = '0';
-      element.style.transform = 'translateY(20px)';
-      element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-      
+      element.style.opacity = "0";
+      element.style.transform = "translateY(20px)";
+      element.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+
       // Observar o elemento
-      observer.observe(element);
-    });
+      observer.observe( element );
+    } );
   };
-  
+
   // Iniciar animação após um pequeno atraso para garantir que os estilos iniciais sejam aplicados
-  setTimeout(animateOnScroll, 100);
-  
+  setTimeout( animateOnScroll, 100 );
+
   // Easter egg de aniversário de Anne Frank
   const today = new Date();
-  const annesBirthday = new Date(today.getFullYear(), 5, 12); // 12 de junho
-  
+  const annesBirthday = new Date( today.getFullYear(), 5, 12 ); // 12 de junho
+
   // Verificar se hoje é o aniversário de Anne Frank
-  if (today.getDate() === annesBirthday.getDate() && today.getMonth() === annesBirthday.getMonth()) {
+  if (
+    today.getDate() === annesBirthday.getDate() &&
+    today.getMonth() === annesBirthday.getMonth()
+  )
+  {
     // Criar um elemento para mostrar a mensagem de aniversário
-    const birthdayMessage = document.createElement('div');
-    birthdayMessage.className = 'birthday-message';
+    const birthdayMessage = document.createElement( "div" );
+    birthdayMessage.className = "birthday-message";
     birthdayMessage.innerHTML = `
       <div class="birthday-message__content">
         <h3>Hoje é o aniversário de Anne Frank!</h3>
@@ -79,9 +104,9 @@ document.addEventListener('DOMContentLoaded', () => {
         <button class="birthday-message__close">Fechar</button>
       </div>
     `;
-    
+
     // Estilizar o elemento
-    const style = document.createElement('style');
+    const style = document.createElement( "style" );
     style.textContent = `
       .birthday-message {
         position: fixed;
@@ -128,15 +153,18 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }
     `;
-    
-    document.head.appendChild(style);
-    document.body.appendChild(birthdayMessage);
-    
+
+    document.head.appendChild( style );
+    document.body.appendChild( birthdayMessage );
+
     // Adicionar funcionalidade ao botão de fechar
-    const closeButton = birthdayMessage.querySelector('.birthday-message__close');
-    closeButton.addEventListener('click', () => {
-      birthdayMessage.style.animation = 'slideIn 0.5s ease backwards reverse';
-      setTimeout(() => birthdayMessage.remove(), 500);
-    });
+    const closeButton = birthdayMessage.querySelector(
+      ".birthday-message__close"
+    );
+    closeButton.addEventListener( "click", () =>
+    {
+      birthdayMessage.style.animation = "slideIn 0.5s ease backwards reverse";
+      setTimeout( () => birthdayMessage.remove(), 500 );
+    } );
   }
-});
+} );

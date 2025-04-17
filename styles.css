@@ -11,11 +11,11 @@
   --anne-blue: hsl(223, 80%, 60%);
   --anne-hope: hsl(135, 80%, 50%);
   --border-color: hsla(214.3, 31.8%, 91.4%, 0.8);
-  
+
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  
+
   --font-sans: 'Inter', sans-serif;
   --font-serif: 'Playfair Display', serif;
   --font-handwritten: 'Nanum Pen Script', cursive;
@@ -38,7 +38,12 @@ body {
   line-height: 1.6;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-serif);
   font-weight: 600;
   line-height: 1.2;
@@ -129,8 +134,8 @@ ul {
   position: relative;
 }
 
-.navigation__menu-icon, 
-.navigation__menu-icon::before, 
+.navigation__menu-icon,
+.navigation__menu-icon::before,
 .navigation__menu-icon::after {
   content: '';
   display: block;
@@ -173,7 +178,7 @@ ul {
   transition: color 0.3s ease;
 }
 
-.navigation__link:hover, 
+.navigation__link:hover,
 .navigation__link--active {
   color: var(--anne-blue);
 }
@@ -182,7 +187,7 @@ ul {
   .navigation__menu-toggle {
     display: none;
   }
-  
+
   .navigation__menu {
     display: flex;
     flex-direction: row;
@@ -190,11 +195,11 @@ ul {
     box-shadow: none;
     padding: 0;
   }
-  
+
   .navigation__item {
     margin: 0 0 0 1.5rem;
   }
-  
+
   .navigation__link {
     padding: 0;
   }
@@ -260,6 +265,7 @@ ul {
     opacity: 0;
     transform: translateY(10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -577,7 +583,7 @@ ul {
   .biography__title {
     font-size: 2.5rem;
   }
-  
+
   .biography__intro {
     flex-direction: row;
     align-items: flex-start;
@@ -591,7 +597,7 @@ ul {
   .biography__overview {
     flex: 2;
   }
-  
+
   .biography__section-title {
     font-size: 1.75rem;
   }
