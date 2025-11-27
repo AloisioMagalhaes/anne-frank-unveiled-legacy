@@ -1,73 +1,114 @@
-# Welcome to your Lovable project
+md
+# Anne Frank: Unveiled Legacy
 
-## Project info
+A project dedicated to preserving and sharing the legacy of Anne Frank.
 
-**URL**: https://lovable.dev/projects/61509460-a9d6-478e-a801-41fcaf7d494a
+## Key Features & Benefits
 
-## How can I edit this code?
+*   **Comprehensive Biography:** Explore Anne Frank's life, from her early years to her tragic fate.
+*   **Diary Excerpts:** Gain insights into her thoughts, feelings, and experiences through selected entries from her diary.
+*   **Secret Annex Exploration:** Learn about the hidden annex where Anne and her family sought refuge during World War II.
+*   **Resource Section:** Discover additional materials, including historical documents, photographs, and educational resources.
+*   **Modern Web Technologies:** Built using JavaScript, TypeScript, and Node.js for a responsive and engaging user experience.
 
-There are several ways of editing your application.
+## Prerequisites & Dependencies
 
-**Use Lovable**
+Before you begin, ensure you have the following installed:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/61509460-a9d6-478e-a801-41fcaf7d494a) and start prompting.
+*   **Node.js:** [https://nodejs.org/](https://nodejs.org/) (version >= 16 recommended)
+*   **npm** (Node Package Manager):  Usually comes with Node.js installation.
+*   **bun:** A fast all-in-one JavaScript runtime. [https://bun.sh/](https://bun.sh/)
 
-Changes made via Lovable will be committed automatically to this repo.
+## Installation & Setup Instructions
 
-**Use your preferred IDE**
+Follow these steps to get the project up and running:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+1.  **Clone the repository:**
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+    ```bash
+    git clone https://github.com/AloisioMagalhaes/anne-frank-unveiled-legacy.git
+    cd anne-frank-unveiled-legacy
+    ```
 
-Follow these steps:
+2.  **Install dependencies using bun:**
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+    ```bash
+    bun install
+    ```
+    or
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+    **Install dependencies using npm:**
 
-# Step 3: Install the necessary dependencies.
-npm i
+    ```bash
+    npm install
+    ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+3.  **Start the development server:**
+
+    ```bash
+    bun dev
+    ```
+    or
+
+    ```bash
+    npm run dev
+    ```
+
+4.  **Open your browser:**
+
+    Navigate to `http://localhost:5173` (or the address provided by the development server).
+
+## Project Structure
+
+```
+├── .gitignore              # Specifies intentionally untracked files that Git should ignore
+├── README.md               # This file!
+├── biography.html          # HTML file for Anne Frank's biography
+├── bun.lockb               # Records the exact versions of dependencies for bun
+├── components.json         # Configuration file for UI components
+├── diary.html              # HTML file for Anne Frank's Diary
+├── eslint.config.js        # Configuration file for ESLint (JavaScript linter)
+├── index.html              # Main HTML entry point
+├── package-lock.json       # Records the exact versions of dependencies (npm)
+├── package.json            # Lists project dependencies and scripts
+├── postcss.config.js       # Configuration file for PostCSS (CSS transformer)
+└── public/                 # Contains static assets
+│   ├── favicon.ico         # Favicon for the website
+│   ├── placeholder.svg     # Placeholder image
+│   ├── robots.txt          # Instructions for web crawlers
+├── resources.html          # HTML file for resources
+├── script.js               # Javascript file
+├── secret-annex.html       # HTML file for Secret Annex
+└── src/                    # Contains source files
+    └── App.css             # CSS styles for the App component
 ```
 
-**Edit a file directly in GitHub**
+## Configuration Options
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+This project leverages environment variables for configuration. Create a `.env` file in the root directory to override default settings (if needed).
 
-**Use GitHub Codespaces**
+*   Example:
+    ```
+    API_ENDPOINT=https://example.com/api
+    ```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Contributing Guidelines
 
-## What technologies are used for this project?
+We welcome contributions! If you'd like to contribute to this project, please follow these guidelines:
 
-This project is built with:
+1.  Fork the repository.
+2.  Create a new branch for your feature or bug fix.
+3.  Make your changes and commit them with clear, concise messages.
+4.  Submit a pull request to the `main` branch.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Please ensure your code adheres to the project's coding standards and includes appropriate tests.
 
-## How can I deploy this project?
+## License Information
 
-Simply open [Lovable](https://lovable.dev/projects/61509460-a9d6-478e-a801-41fcaf7d494a) and click on Share -> Publish.
+This project is open-source and available under the [MIT License](LICENSE) (if a license file is present, otherwise specify the license details here).
+If you would like to contribute please reach out to the owner.
 
-## Can I connect a custom domain to my Lovable project?
+## Acknowledgments
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+*   Special thanks to [Lovable](https://lovable.dev) for providing the initial project scaffolding.
+*   We acknowledge and appreciate the historical sources and materials used in this project.
