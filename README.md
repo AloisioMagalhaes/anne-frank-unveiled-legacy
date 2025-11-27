@@ -1,4 +1,3 @@
-md
 # Anne Frank: Unveiled Legacy
 
 A project dedicated to preserving and sharing the legacy of Anne Frank.
